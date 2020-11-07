@@ -1,5 +1,5 @@
 import Smokey from './smokeybear.svg';
-import Cigarettes from './cigarettes.jpg';
+import Cigarettes from './cigarettes.svg';
 import './Prevention.css'
 
 const Smokeybear = () => {
