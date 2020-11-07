@@ -1,28 +1,65 @@
 .Smokey {
     text-align: center;
+    flex: 33.33%;
+    padding: 5px;
 }
   
 .Smokey-logo {
     height: 50vmin;
     pointer-events: none;
 }
+
+.RowOneElems {
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
   
-.Smokey-header {
+.RowOneElems-logo {
+    height: 20vmin;
+    pointer-events: none;
+}
+
+.RowTwoElems {
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
+  
+.RowTwoElems-logo {
+    height: 20vmin;
+    pointer-events: none;
+}
+  
+.RowZero-header {
     /* background-color: #282c34; */
-    min-height: 100vh;
+    min-height: 30vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     /* font-size: calc(10px + 2vmin);
     color: white; */
 }
 
-.Cigarettes {
-    text-align: center;
+.RowOne-header {
+    /* background-color: #282c34; */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin);
+    color: white; */
 }
-  
-.Cigarettes-logo {
-    height: 20vmin;
-    pointer-events: none;
+
+.RowTwo-header {
+    /* background-color: #282c34; */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    /* font-size: calc(10px + 2vmin);
+    color: white; */
 }
