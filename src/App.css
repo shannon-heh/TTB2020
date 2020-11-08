@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+div.county-history {
+  padding-top: 5%;
+}
+
+#weather-charts {
+  width: 50%;
+  float: right;
+  margin-bottom: 10%;
+}
+
+#fire-data {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: black;
+  width: 40%;
+  background-color: white;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+div.weather-charts {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  float: right;
+}
+
+#temp-precip-chart {
+  margin-top: 10%;
+  background-color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
