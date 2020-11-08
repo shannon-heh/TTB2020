@@ -2,10 +2,12 @@
 
 Hello! We’re Shannon, Vivian, and Pauline and our app is called Vesta, named after the Roman goddess of the hearth. With this app, we hope to raise awareness about how climate-change induced extreme weather phenomena can lead to intensified wildfire patterns.
 
-For the Prediction section, here are examples of coordinates to try:
-(38.5038, -122.8102)
-(38.62935, -122.86646)
-(38.5961, -122.6013)
+Demo: https://youtu.be/OR4DdDpu2sY
+
+For the Prediction section, here are examples of coordinates to try:\
+(38.5038, -122.8102)\
+(38.62935, -122.86646)\
+(38.5961, -122.6013)\
 (39.8717, -121.7689)
 
 **cd TTB2020**\
