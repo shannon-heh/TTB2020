@@ -10,7 +10,7 @@ function App() {
       <NavBar/>
       <Intro/>
       <Descriptions/>
-      <History />
+      <History/>
     </div>
   );
 }
