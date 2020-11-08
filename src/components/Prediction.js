@@ -102,9 +102,9 @@ export const Prediction = () => {
             if(wind > 1) avgWind = wind/numWind;
             else avgWind = DATA_UNAVAILABLE;
             setHistory({
-                "temp": avgTemp, 
-                "prcp": avgPrcp, 
-                "wind": avgWind}
+                "temp": avgTemp.toFixed(2), 
+                "prcp": avgPrcp.toFixed(2), 
+                "wind": avgWind.toFixed(2)}
             );
             setPrediction(true);
         });
