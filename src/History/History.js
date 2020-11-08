@@ -49,23 +49,26 @@ export const History = () => {
     },[]);
 
     return( 
-        <>
+        <div class = "county-history">
         {carousel && (
         <Carousel>
-            <div class = "county-history">
+            <div>
+                <h2>SONOMA COUNTY</h2>
                 <FireHistory county = {data[c.FIRES_SONOMA]} />
                 <WeatherHistory county = {data[c.WEATHER_SONOMA]} />
             </div>
-            <div class = "county-history">
+            <div>
+                <h2>BUTTE COUNTY</h2>
                 <FireHistory county = {data[c.FIRES_BUTTE]} />
                 <WeatherHistory county = {data[c.WEATHER_BUTTE]} />
             </div>
-            <div class = "county-history">
+            <div>
+                <h2>NAPA COUNTY</h2>
                 <FireHistory county = {data[c.FIRES_NAPA]} />
                 <WeatherHistory county = {data[c.WEATHER_NAPA]} />
             </div>
         </Carousel>
         )}
-        </>
+        </div>
     );
 }

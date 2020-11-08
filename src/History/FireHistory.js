@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import NumFire from './fire-icon.svg';
+import Land from './land-icon.svg';
 
 export const FireHistory = (props) => {
     function getFireData(county) {
@@ -22,7 +24,9 @@ export const FireHistory = (props) => {
     return( 
         <div id ="fire-data">
             <p>{numFires + " fires"}</p>
+            <img src={NumFire} className="fire-icon" alt="fire icon"/>
             <p>{acresBurned + " acres burned"}</p>
+            <img src={Land} className="land-icon" alt="land icon"/>
             <p>since 2015</p>
         </div>
     );

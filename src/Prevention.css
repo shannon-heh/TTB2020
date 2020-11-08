@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.Smokey {
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
+  
+.Smokey-logo {
+    height: 50vmin;
+    pointer-events: none;
+}
+
+.indiv-pic {
+    position: relative;
+    height: 20vmin;
+    pointer-events: none;
+}
+
+.icon {
+    position: relative;
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.RowZero-header {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RowOne-header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RowTwo-header {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.icon:hover .overlay{
+    opacity: 1;
+}
+
+.text {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #262626;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

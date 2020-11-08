@@ -9,7 +9,7 @@
   line-height: 1.5em;
   width: 100%;
   animation: movedown 0.5s ease-in-out;
-  background: #FFFFFF;
+  background: #EBE9E7;
   z-index: 9999;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
@@ -72,42 +72,7 @@
   animation: rotate 0.7s ease-in-out 0.5s;
 }
 
-/* @keyframes moveDown { */
-
-div.county-history {
-  padding-top: 5%;
-}
-
-#weather-charts {
-  width: 50%;
-  float: right;
-  margin-bottom: 10%;
-}
-
-#fire-data {
-  margin-left: 5%;
-  margin-right: 5%;
-  color: black;
-  width: 40%;
-  background-color: white;
-  float: left;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-div.weather-charts {
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 40%;
-  float: right;
-}
-
-#temp-precip-chart {
-  margin-top: 10%;
-  background-color: white;
-}
-
-@keyframes App-logo-spin {
+@keyframes moveDown {
   from {
     transform: translateY(-5px);
   }
@@ -152,6 +117,7 @@ div.weather-charts {
 #desc {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  position: static;
 }
 
 #glacier {
@@ -184,4 +150,52 @@ div.weather-charts {
   height: 200px;
   text-align: center;
   font-size: 20px;
+}
+
+div.county-history {
+  top: 100px;
+  bottom: 100px;
+}
+
+div.county-history h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  padding: 0;
+}
+
+div.county-history img {
+  height: 100px;
+  width: 100px;
+}
+
+div.weather-charts {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  padding: 20px 100px 80px 50px;
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+#fire-data {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  width: 40%;
+  font-size: 25px;
+  float: left;
+  padding: 10px 150px 50px 200px;
+}
+
+#temp-precip-chart {
+  padding: 40px;
+  background-color: 555555;
+  color: white;
+}
+
+div.carousel li.slide {
+  background-color: #555555;
 }

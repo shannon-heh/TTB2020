@@ -8,7 +8,7 @@ export const NavBar = () => {
             </div>
             <div id="nav">
                 <ul>
-                    <li><a href = "#home">Home</a></li>
+                    <li><a href = "#overlay">Home</a></li>
                     <li><a href = "#history">History</a></li>
                     <li><a href = "#prediction">Prediction</a></li>
                     <li><a href = "#prevention">Prevention</a></li>
