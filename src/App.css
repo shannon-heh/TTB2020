@@ -194,4 +194,38 @@ div.weather-charts {
 
 div.carousel li.slide {
   background-color: #555555;
+  font-size: 20px;
+}
+
+#aboutus-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 400;
+  top: 40%;
+  width: 70%;
+  padding: 50px 0px 50px 0px;
+}
+
+#aboutus-body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 300;
+  top: 40%;
+  width: 70%;
+  padding: 15px;
+}
+
+#aboutus-foot {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 300;
+  top: 40%;
+  width: 70%;
+  padding: 5px;
 }
