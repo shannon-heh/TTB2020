@@ -6,7 +6,7 @@
   background: none repeat scroll 0 0;
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   width: 100%;
   animation: movedown 0.5s ease-in-out;
   background: #EBE9E7;
@@ -17,7 +17,7 @@
 
 #nav {
   margin: auto;
-  width: 1170px;
+  width: 70%;
 }
 
 #nav ul {
@@ -122,34 +122,30 @@
 
 #glacier {
   float: right;
-  background-position: right;
   width: 40%;
-  padding: 50px 100px 25px 50px;
+  margin: 5rem 5rem 2.4rem 0rem;
 }
 
 #glacier-text {
   float: left;
-  padding: 100px 150px 50px 200px;
-  width: 500px;
-  height: 200px;
+  width: 40%;
+  margin: 7rem 0rem 5rem 7rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 #fire {
   float: left;
-  background-position: left;
   width: 40%;
-  padding: 150px 50px 50px 100px;
+  margin: 7rem 0rem 5rem 7rem;
 }
 
 #fire-text {
   float: right;
-  padding: 100px 200px 50px 100px;
-  width: 500px;
-  height: 200px;
+  width: 40%;
+  margin: 5rem 4.5rem 2.4rem 0rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 div.county-history {
@@ -174,7 +170,7 @@ div.weather-charts {
   margin-left: 5%;
   margin-right: 5%;
   width: 40%;
-  padding: 20px 100px 80px 50px;
+  margin: 1.5rem 7rem 2.4rem 0rem;
   float: right;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
@@ -185,9 +181,9 @@ div.weather-charts {
   margin-right: 5%;
   color: white;
   width: 40%;
-  font-size: 25px;
+  font-size: 1.4rem;
   float: left;
-  padding: 10px 150px 50px 200px;
+  margin: 1rem 0rem 2.4rem 7rem;
 }
 
 #temp-precip-chart {
