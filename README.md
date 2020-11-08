@@ -1,6 +1,6 @@
 # TTB2020: Vesta 
 
-** Winner of Prettiest Hack at TechTogether Boston 2020 **
+**Winner of Prettiest Hack at TechTogether Boston 2020**
 
 
 Hello! We’re Shannon, Vivian, and Pauline and our app is called Vesta, named after the Roman goddess of the hearth. With this app, we hope to raise awareness about how climate-change induced extreme weather phenomena can lead to intensified wildfire patterns.
