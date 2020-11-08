@@ -5,7 +5,6 @@ import Lawnmowersvg from './lawnmower.svg';
 import Campfiresvg from './campfire.svg';
 import Flowerpot from './flowers.svg';
 import Phonecall from './phonecall.svg';
-import {useState} from 'react';
 import './Prevention.css'
 
 const Smokeybear = () => {
@@ -18,62 +17,71 @@ const Smokeybear = () => {
 
 const Cigs = () => {
     return (
-        <div className="RowOneElems">
-            <img src={Cigarettes} className="RowOneElems-logo" alt="RowOneElems Logo" />
+        <div className="Cigarettes">
+            <img src={Cigarettes} className="Cigarettes-logo" alt="Cigarettes Logo" />
+            <div className="overlay">
+                <div class="text">Cigarettes</div>
+            </div>
         </div>
     );
 }
 
 const Fireworks = () => {
     return (
-        <div className="RowOneElems">
-            <img src={Fireworkssvg} className="RowOneElems-logo" alt="RowOneElems Logo" />
+        <div className="Fireworks">
+            <img src={Fireworkssvg} className="Fireworks-logo" alt="Fireworks Logo" />
+            <div className="overlay">
+                <div class="text">Fireworks</div>
+            </div>
         </div>
     );
 }
 
 const Lawnmower = () => {
     return (
-        <div className="RowTwoElems">
-            <img src={Lawnmowersvg} className="RowTwoElems-logo" alt="RowTwoElems Logo" />
+        <div className="Lawnmower">
+            <img src={Lawnmowersvg} className="Lawnmower-logo" alt="Lawnmower Logo" />
+            <div className="overlay">
+                <div class="text">Lawnmower</div>
+            </div>
         </div>
     );
 }
 
 const Campfire = () => {
     return (
-        <div className="RowTwoElems">
-            <img src={Campfiresvg} className="RowTwoElems-logo" alt="RowTwoElems Logo" />
+        <div className="Campfire">
+            <img src={Campfiresvg} className="Campfire-logo" alt="Campfire Logo" />
+            <div className="overlay">
+                <div class="text">Campfire</div>
+            </div>
         </div>
     );
 }
 
 const Flowers = () => {
     return (
-        <div className="RowOneElems">
-            <img src={Flowerpot} className="RowOneElems-logo" alt="RowOneElems Logo" />
+        <div className="Flowers">
+            <img src={Flowerpot} className="Flowers-logo" alt="Flowers Logo" />
+            <div className="overlay">
+                <div class="text">Flowers</div>
+            </div>
         </div>
     );
 }
 
 const Phone = () => {
     return (
-        <div className="RowOneElems">
-            <img src={Phonecall} className="RowOneElems-logo" alt="RowOneElems Logo" />
+        <div className="Phone">
+            <img src={Phonecall} className="Phone-logo" alt="Phone Logo" />
+            <div className="overlay">
+                <div class="text">Phone</div>
+            </div>
         </div>
     );
 }
 
 function Prevention() {
-    //const [isShown, setIsShown] = useState(false);
-
-    // const imageShown = () => {
-    //     <button 
-    //         onMouseEnter={() => setIsShown(true)}
-    //         onMouseLeave={() => setIsShown(false)}
-
-    // }
-
     return (
         <div>
             <header className="RowZero-header">

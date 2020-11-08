@@ -9,28 +9,84 @@
     pointer-events: none;
 }
 
-.RowOneElems {
+.Cigarettes {
+    position: relative;
     text-align: center;
     flex: 33.33%;
     padding: 5px;
 }
   
-.RowOneElems-logo {
+.Cigarettes-logo {
+    position: relative;
     height: 20vmin;
     pointer-events: none;
 }
 
-.RowTwoElems {
+.Fireworks {
+    position: relative;
     text-align: center;
     flex: 33.33%;
     padding: 5px;
 }
   
-.RowTwoElems-logo {
+.Fireworks-logo {
+    position: relative;
     height: 20vmin;
     pointer-events: none;
 }
+
+.Lawnmower {
+    position: relative;
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
   
+.Lawnmower-logo {
+    position: relative;
+    height: 20vmin;
+    pointer-events: none;
+}
+
+.Campfire {
+    position: relative;
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
+  
+.Campfire-logo {
+    position: relative;
+    height: 20vmin;
+    pointer-events: none;
+}
+
+.Flowers {
+    position: relative;
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
+  
+.Flowers-logo {
+    position: relative;
+    height: 20vmin;
+    pointer-events: none;
+}
+
+.Phone {
+    position: relative;
+    text-align: center;
+    flex: 33.33%;
+    padding: 5px;
+}
+  
+.Phone-logo {
+    position: relative;
+    height: 20vmin;
+    pointer-events: none;
+}
+
 .RowZero-header {
     /* background-color: #282c34; */
     min-height: 30vh;
@@ -62,4 +118,53 @@
     justify-content: center; */
     /* font-size: calc(10px + 2vmin);
     color: white; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.Cigarettes:hover .overlay {
+    opacity: 1;
+}
+
+.Fireworks:hover .overlay {
+    opacity: 1;
+}
+
+.Lawnmower:hover .overlay {
+    opacity: 1;
+}
+
+.Campfire:hover .overlay {
+    opacity: 1;
+}
+
+.Flowers:hover .overlay {
+    opacity: 1;
+}
+
+.Phone:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
