@@ -10,17 +10,21 @@ import './Prevention.css'
 const Smokeybear = () => {
     return (
         <div className="Smokey">
-            <img src={Smokey} className="Smokey-logo" alt="Smokey Logo" />
+            <img src={Smokey} className="Smokey-logo" alt="Smokey logo" />
         </div>
     );
 }
 
 const Cigs = () => {
     return (
-        <div className="Cigarettes">
-            <img src={Cigarettes} className="Cigarettes-logo" alt="Cigarettes Logo" />
+        <div className="icon">
+            <img src={Cigarettes} className="indiv-pic" alt="indiv pic" />
             <div className="overlay">
-                <div class="text">Cigarettes</div>
+                <div class="text">
+                    Make sure you dispose of your smoking materials properly.
+                    Do not throw them on the ground. Douse them with water and
+                    put them in a fireproof container instead.
+                </div>
             </div>
         </div>
     );
@@ -28,10 +32,14 @@ const Cigs = () => {
 
 const Fireworks = () => {
     return (
-        <div className="Fireworks">
-            <img src={Fireworkssvg} className="Fireworks-logo" alt="Fireworks Logo" />
+        <div className="icon">
+            <img src={Fireworkssvg} className="indiv-pic" alt="indiv pic" />
             <div className="overlay">
-                <div class="text">Fireworks</div>
+                <div class="text">
+                    Do not set off pyrotechnics of any kind. Many large
+                    wildfires have been started by fireworks or other pyrotechnics,
+                    the risk is just too high.
+                </div>
             </div>
         </div>
     );
@@ -39,10 +47,15 @@ const Fireworks = () => {
 
 const Lawnmower = () => {
     return (
-        <div className="Lawnmower">
-            <img src={Lawnmowersvg} className="Lawnmower-logo" alt="Lawnmower Logo" />
+        <div className="icon">
+            <img src={Lawnmowersvg} className="indiv-pic" alt="indiv pic" />
             <div className="overlay">
-                <div class="text">Lawnmower</div>
+                <div class="text">
+                    If you must mow your lawn, it is recommended that you do so when
+                    it is early in the day, before 10 am. But avoid mowing your lawn
+                    at all when it is too windy or dry, since the mower can easily
+                    ignite a flame if it strikes a rock.
+                </div>
             </div>
         </div>
     );
@@ -50,10 +63,14 @@ const Lawnmower = () => {
 
 const Campfire = () => {
     return (
-        <div className="Campfire">
-            <img src={Campfiresvg} className="Campfire-logo" alt="Campfire Logo" />
+        <div className="icon">
+            <img src={Campfiresvg} className="indiv-pic" alt="indiv pic" />
             <div className="overlay">
-                <div class="text">Campfire</div>
+                <div class="text">
+                    Never ever leave your campfire unattended. Before you leave,
+                    make sure you douse it with water and wait until it is 
+                    completely cool before you leave.
+                </div>
             </div>
         </div>
     );
@@ -61,10 +78,14 @@ const Campfire = () => {
 
 const Flowers = () => {
     return (
-        <div className="Flowers">
-            <img src={Flowerpot} className="Flowers-logo" alt="Flowers Logo" />
+        <div className="icon">
+            <img src={Flowerpot} className="indiv-pic" alt="indiv pic" />
             <div className="overlay">
-                <div class="text">Flowers</div>
+                <div class="text">
+                    Incorporate some fire-resistant plants, such as lavendar, sage,
+                    and California fuchsia, onto your property if you have the space.
+                    You can also create some defensive space with patios, stone walls, etc. 
+                </div>
             </div>
         </div>
     );
@@ -72,10 +93,15 @@ const Flowers = () => {
 
 const Phone = () => {
     return (
-        <div className="Phone">
-            <img src={Phonecall} className="Phone-logo" alt="Phone Logo" />
+        <div className="icon">
+            <img src={Phonecall} className="indiv-pic" alt="indiv pic" />
             <div className="overlay">
-                <div class="text">Phone</div>
+                <div class="text">
+                    Report all unattended fires you see, whether that be an
+                    uncontrollable wildfire or a simple unattended campfire. Even
+                    the most innocuous flame can grow to be a devastating wildfire
+                    under the right conditions.
+                </div>
             </div>
         </div>
     );

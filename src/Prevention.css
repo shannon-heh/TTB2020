@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 .Smokey {
     text-align: center;
     flex: 33.33%;
@@ -9,82 +11,17 @@
     pointer-events: none;
 }
 
-.Cigarettes {
-    position: relative;
-    text-align: center;
-    flex: 33.33%;
-    padding: 5px;
-}
-  
-.Cigarettes-logo {
+.indiv-pic {
     position: relative;
     height: 20vmin;
     pointer-events: none;
 }
 
-.Fireworks {
+.icon {
     position: relative;
     text-align: center;
     flex: 33.33%;
     padding: 5px;
-}
-  
-.Fireworks-logo {
-    position: relative;
-    height: 20vmin;
-    pointer-events: none;
-}
-
-.Lawnmower {
-    position: relative;
-    text-align: center;
-    flex: 33.33%;
-    padding: 5px;
-}
-  
-.Lawnmower-logo {
-    position: relative;
-    height: 20vmin;
-    pointer-events: none;
-}
-
-.Campfire {
-    position: relative;
-    text-align: center;
-    flex: 33.33%;
-    padding: 5px;
-}
-  
-.Campfire-logo {
-    position: relative;
-    height: 20vmin;
-    pointer-events: none;
-}
-
-.Flowers {
-    position: relative;
-    text-align: center;
-    flex: 33.33%;
-    padding: 5px;
-}
-  
-.Flowers-logo {
-    position: relative;
-    height: 20vmin;
-    pointer-events: none;
-}
-
-.Phone {
-    position: relative;
-    text-align: center;
-    flex: 33.33%;
-    padding: 5px;
-}
-  
-.Phone-logo {
-    position: relative;
-    height: 20vmin;
-    pointer-events: none;
 }
 
 .RowZero-header {
@@ -111,7 +48,7 @@
 
 .RowTwo-header {
     /* background-color: #282c34; */
-    min-height: 80vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: row;
     /* align-items: center;
@@ -133,32 +70,13 @@
     background-color: white;
 }
 
-.Cigarettes:hover .overlay {
-    opacity: 1;
-}
-
-.Fireworks:hover .overlay {
-    opacity: 1;
-}
-
-.Lawnmower:hover .overlay {
-    opacity: 1;
-}
-
-.Campfire:hover .overlay {
-    opacity: 1;
-}
-
-.Flowers:hover .overlay {
-    opacity: 1;
-}
-
-.Phone:hover .overlay {
+.icon:hover .overlay{
     opacity: 1;
 }
 
 .text {
-    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #262626;
     font-size: 20px;
     position: absolute;
     top: 50%;
