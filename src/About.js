@@ -3,7 +3,7 @@ import './App.css'
 function About() {
     return (
         <div id = "aboutus-title">
-            <div>About Us</div>
+            <div>ABOUT US</div>
             <div id="aboutus-body">
                 We are three students from Northern California who have been indirectly
                 affected by the catastrophic wildfires that have been ravaging California for

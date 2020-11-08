@@ -11,6 +11,7 @@ const Smokeybear = () => {
     return (
         <div className="Smokey">
             <img src={Smokey} className="Smokey-logo" alt="Smokey logo" />
+            <div className="Smokey-text">Smokey says only you can prevent wildfires!</div>
         </div>
     );
 }
@@ -98,7 +99,7 @@ const Phone = () => {
             <div className="overlay">
                 <div class="text">
                     Report all unattended fires you see, whether that be an
-                    uncontrollable wildfire or a simple unattended campfire. Even
+                    uncontrollable wildfire or a simple campfire. Even
                     the most innocuous flame can grow to be a devastating wildfire
                     under the right conditions.
                 </div>
