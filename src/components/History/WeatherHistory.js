@@ -2,6 +2,7 @@ import React from 'react';
 import { LineChart } from 'react-chartkick'
 
 export const WeatherHistory = (props) => {
+  /* returns extreme max teemp, level of precipitation for a county*/
     function getWeatherData(county) {
         let data = [[], []];
         let prevCity = "";
@@ -33,6 +34,7 @@ export const WeatherHistory = (props) => {
         return data;
     }
 
+    /* constructs line chart to display temp and precip data */
     return(
         <div id = "history">
         <div class = "weather-charts">

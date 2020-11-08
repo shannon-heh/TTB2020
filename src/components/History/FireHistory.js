@@ -3,6 +3,7 @@ import NumFire from '../img/fire-icon.svg';
 import Land from '../img/land-icon.svg';
 
 export const FireHistory = (props) => {
+    /* reeturns number of firese and acres burned for a couunty*/
     function getFireData(county) {
         let fireData = {
             "numFires": 0,
@@ -21,6 +22,7 @@ export const FireHistory = (props) => {
     const numFires = fireData.numFires;
     const acresBurned = fireData.acresBurned;
 
+    /* displays fire data */
     return( 
         <div id ="fire-data">
             <p>{numFires + " fires"}</p>

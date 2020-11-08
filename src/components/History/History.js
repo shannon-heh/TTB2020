@@ -5,6 +5,7 @@ import { WeatherHistory } from './WeatherHistory.js';
 import { Carousel } from 'react-responsive-carousel';
 import 'chart.js'
 
+/* enum for indices in data array */
 const c = {
     FIRES_SONOMA: 0,
     FIRES_BUTTE: 1,
@@ -20,6 +21,8 @@ export const History = () => {
     const [data,setData]=useState([]);
     const [carousel,setCarousel]=useState(false);
 
+    /* fetches all historical data from backend for 
+    sonoma, butte, napa counties*/
     const getData = () => {
         const url = 'http://localhost:3001/';
         const firesUrl = url + 'fires?Counties=';
@@ -44,10 +47,12 @@ export const History = () => {
         });
     };
 
+    /* hook - waits for component to mount */
     useEffect(()=>{
         getData();
     },[]);
 
+    /* constructs carousel and calls child components */
     return( 
         <div class = "county-history">
         {carousel && (

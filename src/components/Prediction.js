@@ -11,6 +11,8 @@ const MONTH_INDEX = 6;
 const DATA_UNAVAILABLE = "Data unavailable";
 const KELVIN_MULT = 9/5;
 const KELVIN_CONST = -459.67;
+
+/* levels of risk */
 const RISK = {
     NODATA: "Sorry, we don't have enough data to make predictions today.",
     NONE: "Yay, no risk of fire!",
@@ -26,6 +28,7 @@ export const Prediction = () => {
     const [prediction,setPrediction]=useState(false);
     const {register, handleSubmit} = useForm();
 
+    /* creates prediction based on historical data and current weather*/
     const fetchPrediction = () => {
         let riskFactor = 0;
         let numValid = 0;;
@@ -53,9 +56,12 @@ export const Prediction = () => {
 
     }
 
+    /* when user clicks enter ono form */
     const onSubmit = data => { 
         const lat = data.latitude;
         const lon = data.longitude;
+       
+       /* fetch current weather data from openweathermap */
         const apikey = '4442842ee5abc16c9caa8989d5335c42';
         const owmUrl = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid='+apikey;                     
         axios.get(owmUrl)
@@ -71,8 +77,9 @@ export const Prediction = () => {
             currWeather["type"] = weatherData.weather[0].main;
             setWeather(currWeather);
         });
+
+        /* fetch historical data from backend */
         const historyUrl = 'http://localhost:3001/weather_month?LATITUDE='+lat+'&LONGITUDE='+lon;
-        console.log(historyUrl);
         axios.get(historyUrl)
         .then(res => {
             let maxTemp = 0, prcp = 0, wind = 0;
@@ -95,6 +102,9 @@ export const Prediction = () => {
                     }
                 }
             });
+
+            /* if no data, theen set avg to DATA_UNAVAILABLE; otherwise,
+            calculate average */
             if(numTemp > 1) avgTemp = maxTemp/numTemp;
             else avgTemp = DATA_UNAVAILABLE;
             if(numPrcp > 1) avgPrcp = prcp/numPrcp;
@@ -108,7 +118,7 @@ export const Prediction = () => {
             );
             setPrediction(true);
         });
-        fetchPrediction();
+        fetchPrediction(); /* return prediction */
     };
 
     return (
