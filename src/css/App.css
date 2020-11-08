@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700,300&display=swap");
+
+/* Nav Bar */
+#main-menu {
+  position: -webit-sticky;
+  position: fixed;
+  background: none repeat scroll 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 100%;
+  animation: movedown 0.5s ease-in-out;
+  background: #ebe9e7;
+  z-index: 9999;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#nav {
+  margin: auto;
+  width: 70%;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 3% 4%;
+  list-style: none;
+  text-align: right;
+}
+
+#nav ul li {
+  float: none;
+  display: inline-block;
+}
+
+#nav ul li:nth-child(1) {
+  float: left;
+}
+
+#nav ul li:nth-child(2) {
+  float: left;
+}
+
+#nav ul li:nth-child(3) {
+  float: left;
+}
+
+#nav ul li a {
+  color: #262626;
+  font-size: 1.7vw;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  padding: 20px 20px;
+}
+
+#nav ul li:hover {
+  background-color: #555555;
+}
+
+#nav ul li a:hover {
+  color: #ffffff;
+}
+
+#logo {
+  width: 6%;
+  height: 10%;
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  content: "";
+  margin-left: -75px;
+  animation: rotate 0.7s ease-in-out 0.5s;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0px);
+  }
+}
+
+/* Home */
+#fire-intro {
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+#overlay {
+  margin-top: 0;
+  top: 145px;
+  color: #f9e9db;
+  text-align: center;
+  font-size: 4.2vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#title {
+  position: absolute;
+  top: 40%;
+  width: 70%;
+}
+
+#desc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  position: static;
+}
+
+#glacier {
+  float: right;
+  width: 40%;
+  margin: 5rem 5rem 2.4rem 0rem;
+}
+
+#glacier-text {
+  float: left;
+  width: 40%;
+  margin: 7rem 0rem 5rem 7rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#fire {
+  float: left;
+  width: 40%;
+  margin: 7rem 0rem 5rem 7rem;
+}
+
+#fire-text {
+  float: right;
+  width: 40%;
+  margin: 5rem 4.5rem 2.4rem 0rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* History */
+div.county-history {
+  top: 100px;
+  bottom: 100px;
+}
+
+div.county-history h2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  padding: 0;
+}
+
+div.county-history img {
+  height: 100px;
+  width: 100px;
+}
+
+div.weather-charts {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  margin: 1.5rem 7rem 2.4rem 0rem;
+  float: right;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#fire-data {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  width: 40%;
+  font-size: 1.4rem;
+  float: left;
+  margin: 1rem 0rem 2.4rem 7rem;
+}
+
+#temp-precip-chart {
+  padding: 40px;
+  background-color: 555555;
+  color: white;
+}
+
+div.carousel li.slide {
+  background-color: #555555;
+  font-size: 20px;
+}
+
+/* Prediction */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700,300&display=swap");
+
+/* Nav Bar */
+#main-menu {
+  position: -webit-sticky;
+  position: fixed;
+  background: none repeat scroll 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  width: 100%;
+  animation: movedown 0.5s ease-in-out;
+  background: #ebe9e7;
+  z-index: 9999;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#nav {
+  margin: auto;
+  width: 70%;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 3% 4%;
+  list-style: none;
+  text-align: right;
+}
+
+#nav ul li {
+  float: none;
+  display: inline-block;
+}
+
+#nav ul li:nth-child(1) {
+  float: left;
+}
+
+#nav ul li:nth-child(2) {
+  float: left;
+}
+
+#nav ul li:nth-child(3) {
+  float: left;
+}
+
+#nav ul li a {
+  color: #262626;
+  font-size: 1.7vw;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  padding: 20px 20px;
+}
+
+#nav ul li:hover {
+  background-color: #555555;
+}
+
+#nav ul li a:hover {
+  color: #ffffff;
+}
+
+#logo {
+  width: 6%;
+  height: 10%;
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  content: "";
+  margin-left: -75px;
+  animation: rotate 0.7s ease-in-out 0.5s;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0px);
+  }
+}
+
+/* Home */
+#fire-intro {
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+#overlay {
+  margin-top: 0;
+  top: 145px;
+  color: #f9e9db;
+  text-align: center;
+  font-size: 4.2vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#title {
+  position: absolute;
+  top: 40%;
+  width: 70%;
+}
+
+#desc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  position: static;
+}
+
+#glacier {
+  float: right;
+  width: 40%;
+  margin: 5rem 5rem 2.4rem 0rem;
+}
+
+#glacier-text {
+  float: left;
+  width: 40%;
+  margin: 7rem 0rem 5rem 7rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#fire {
+  float: left;
+  width: 40%;
+  margin: 7rem 0rem 5rem 7rem;
+}
+
+#fire-text {
+  float: right;
+  width: 40%;
+  margin: 5rem 4.5rem 2.4rem 0rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* History */
+div.county-history {
+  top: 100px;
+  bottom: 100px;
+}
+
+div.county-history h2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  padding: 0;
+}
+
+div.county-history img {
+  height: 100px;
+  width: 100px;
+}
+
+div.weather-charts {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  margin: 1.5rem 7rem 2.4rem 0rem;
+  float: right;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#fire-data {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  width: 40%;
+  font-size: 1.4rem;
+  float: left;
+  margin: 1rem 0rem 2.4rem 7rem;
+}
+
+#temp-precip-chart {
+  padding: 40px;
+  background-color: 555555;
+  color: white;
+}
+
+div.carousel li.slide {
+  background-color: #555555;
+  font-size: 20px;
+}
+
+/* Prediction */
+#prediction {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#prediction img {
+  width: 5rem;
+  margin: center;
+}
+
+#boxes {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#boxes div {
+  margin: 3rem;
+}
+
+/* About Us */
+#aboutus-title {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 700;
+  top: 40%;
+  width: 70%;
+  padding: 50px 0px 50px 0px;
+}
+
+#aboutus-body {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 300;
+  top: 40%;
+  width: 70%;
+  padding: 15px;
+}
+
+#aboutus-foot {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 300;
+  top: 40%;
+  width: 70%;
+  padding: 5px;
+}
+
+/* Prediction Form */
+div #enter-coords {
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+#form div {
+  text-align: center;
+}
+
+#form #input {
+  margin-left: 2%;
+  font-size: 1.2vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+#form #submit {
+  margin-left: 2%;
+  font-size: 1.2vw;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  background-color: #555555;
+  color: white;
+  border-radius: 4px;
+  border-width: 0px;
+}
+
+#form #submit:hover {
+  background-color: #d9d4ce;
+  transition: 0.5s;
+}
+
+/* Community */
+
+#community-title {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 700;
+  top: 40%;
+  width: 70%;
+  padding: 50px 0px 50px 0px;
+}
+
+#community-bullet {
+  padding: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 300;
+  top: 40%;
+  width: 40%;
+}
+
+#community gif {
+  position: absolute;
+  height: 10vmin;
+  margin: 2.4rem 2.4rem 2.4rem 2.4rem;
+  pointer-events: none;
+  padding: 10px;
+}
+
+.Community-icon {
+  position: relative;
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#text {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 10px 0px 10px 0px;
+}

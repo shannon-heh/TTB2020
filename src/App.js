@@ -1,11 +1,12 @@
 import React from 'react';
-import {History} from './History/History.js';
-import './App.css';
-import {NavBar} from './Nav.js';
-import {Intro, Descriptions} from './Home.js';
-import Prevention from './Prevention';
-import {Prediction} from './Prediction';
-import About from './About';
+import {History} from './components/History/History.js';
+import './css/App.css';
+import {NavBar} from './components/Nav';
+import {Intro, Descriptions} from './components/Home';
+import {Prevention} from './components/Prevention';
+import {Prediction} from './components/Prediction';
+import {About} from './components/About';
+import {Community} from './components/Community';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <History/>
       <Prediction/>
       <Prevention />
+      <Community />
       <About />
     </div>
   )
