@@ -123,7 +123,10 @@ export const Prediction = () => {
 
     return (
         <div id="prediction">  
-            <div><h3 id="enter-coords">Enter your coordinates! </h3></div>
+            <div>
+                <h3 id="enter-coords">Enter your coordinates! </h3>
+                <p>Valid coordinates only. Examples include (38.5038, -122.8102), (38.5961, -122.6013).</p>
+            </div>
             <form id="form" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <input id="input" name="latitude" placeholder="Your Latitude" ref={register} 
