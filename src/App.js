@@ -5,6 +5,7 @@ import {NavBar} from './Nav.js';
 import {Intro, Descriptions} from './Home.js';
 import Prevention from './Prevention';
 import {Prediction} from './Prediction';
+import About from './About';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <History/>
       <Prediction/>
       <Prevention />
+      <About />
     </div>
   )
 }
