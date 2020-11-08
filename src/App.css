@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700,300&display=swap');
+
+#main-menu {
+  position: -webit-sticky;
+  position: fixed;
+  background: none repeat scroll 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  width: 100%;
+  animation: movedown 0.5s ease-in-out;
+  background: #FFFFFF;
+  z-index: 9999;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#nav {
+  margin: auto;
+  width: 1170px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav ul {
+  margin: 0;
+  padding: 30px 35px;
+  list-style: none;
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#nav ul li{
+  float: none;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+#nav ul li:nth-child(1) {
+  float: left;
 }
 
-@keyframes App-logo-spin {
+#nav ul li:nth-child(2) {
+  float: left;
+}
+
+#nav ul li:nth-child(3) {
+  float: left;
+}
+
+#nav ul li a{
+  color: #262626;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  padding: 20px 20px;
+}
+
+#nav ul li:hover {
+  background-color: #555555;
+}
+
+#nav ul li a:hover {
+  color: #FFFFFF;
+}
+
+#logo {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  content: "";
+  margin-left: -75px;
+  animation: rotate 0.7s ease-in-out 0.5s;
+}
+
+@keyframes moveDown {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-5px);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0px);
   }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0px);
+  }
+}
+
+#fire-intro {
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+#overlay {
+  margin-top: 0;
+  top: 145px;
+  color: #F9E9DB;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+#title {
+  position: absolute;
+  top: 40%;
+  width: 70%;
+}
+
+#desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+#glacier {
+  float: right;
+  background-position: right;
+  width: 40%;
+  padding: 50px 100px 25px 50px;
+}
+
+#glacier-text {
+  float: left;
+  padding: 100px 150px 50px 200px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#fire {
+  float: left;
+  background-position: left;
+  width: 40%;
+  padding: 150px 50px 50px 100px;
+}
+
+#fire-text {
+  float: right;
+  padding: 100px 200px 50px 100px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  font-size: 20px;
 }

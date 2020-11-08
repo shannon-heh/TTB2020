@@ -1,11 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Prevention from './Prevention';
+import {NavBar} from './Nav.js';
+import {Intro, Descriptions} from './Home.js';
 
 function App() {
   return (
-    <Prevention />
+    <div>
+      <NavBar/>
+      <Intro/>
+      <Descriptions/>
+      <Prevention/>
+    </div>
   );
 }
 
