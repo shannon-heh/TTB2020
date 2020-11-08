@@ -30,11 +30,11 @@ export const Prediction = () => {
             if(weather["temp"] >= history["temp"] - 10) 
                 riskFactor++;
         }
-        if(history["prcp"] !== DATA_UNAVAILABLE) {
-            numValid++;
-            if(weather["prcp"] <= history["prcp"] + 2) 
+        if(weather["type"] === "Thunderstorm" || weather["type"] === "Smoke" 
+            || weather["type"] === "Haze") 
                 riskFactor++;
-        }
+        if(history["prcp"] !== DATA_UNAVAILABLE)
+            numValid++;
         if(history["wind"] !== DATA_UNAVAILABLE) {
             numValid++;
             if(weather["wind"] >= history["wind"] - 1) 
@@ -108,11 +108,17 @@ export const Prediction = () => {
     };
 
     return (
-        <>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input name="latitude" placeholder="Your Latitude" ref={register} />
-                <input name="longitude" placeholder="Your Longitude" ref={register} />
-                <input type="submit" placeholder="Enter" value = "Enter"/>
+        <div id="prediction">  
+            <div><h3 id="enter-coords">Enter your coordinates! </h3></div>
+            <form id="form" onSubmit={handleSubmit(onSubmit)}>
+                <div>
+                    <input id="input" name="latitude" placeholder="Your Latitude" ref={register} 
+                        style={{height:"2em", width: "16em"}}/>
+                    <input id="input" name="longitude" placeholder="Your Longitude" ref={register} 
+                        style={{height:"2em", width: "16em"}}/>
+                    <input id="submit" type="submit" placeholder="Enter" value = "Enter" 
+                        style={{height:"2.5em", width: "8em"}}/>
+                </div>
             </form>
             {prediction && (
                 <>
@@ -126,6 +132,6 @@ export const Prediction = () => {
                 </>
             )
             }
-        </>
+        </div>
     );
 }
